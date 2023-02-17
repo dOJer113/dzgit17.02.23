@@ -1,25 +1,25 @@
 public class SalesManager {
-    protected int[] sales;
+    protected long[] sales;
 
-    public SalesManager(int[] sales) {
+    public SalesManager(long[] sales) {
         this.sales = sales;
     }
 
-    public int max() {
-        int max = -1;
-        for (int sale : sales) {
+    public long max() {
+        long max = -1;
+        for (long sale : sales) {
             if (sale > max) {
                 max = sale;
             }
         }
         return max;
     }
-    public int mediumCropped(){
-        int max = -1;
-        int min = 10_000;
-        int amount =0;
-        int result =0;
-        for (int sale:sales){
+    public long mediumCropped(){
+        long max = -1;
+        long min = 10_000;
+        long amount =0;
+        long result =0;
+        for (long sale:sales){
             if(sale > max){
                 max=sale;
             }
